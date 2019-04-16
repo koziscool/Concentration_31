@@ -24,7 +24,10 @@ matcherView = {
   },
 
   updateGameView: function(){
-    
+    $('#game-state-text').text( this.model.gameStateText );
+    $('#num-guesses').text( this.model.numGuesses );
+    $('#matched-cards').text( this.model.matchedCards );
+    $('#total-cards').text( this.model.totalCards );    
   },
 
   addClickHandlers: function( fn, context ){
